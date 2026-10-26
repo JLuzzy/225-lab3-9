@@ -6,7 +6,7 @@ pipeline {
         DOCKER_IMAGE = 'cithit/lusnakj'                               //<-----change this to your MiamiID!
         IMAGE_TAG = "build-${BUILD_NUMBER}"
         GITHUB_URL = 'https://github.com/JLuzzy/225-lab3-9.git' //<-----change this to match this new repository!
-        KUBECONFIG = credentials('lusnak-225')                           //<-----change this to match your kubernetes credentials (MiamiID-225)! 
+        KUBECONFIG = credentials('lusnakj-225')                           //<-----change this to match your kubernetes credentials (MiamiID-225)! 
     }
 
     stages {
