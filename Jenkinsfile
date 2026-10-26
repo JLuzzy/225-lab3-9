@@ -2,11 +2,11 @@ pipeline {
     agent any 
 
     environment {
-        DOCKER_CREDENTIALS_ID = 'roseaw-dockerhub'  
-        DOCKER_IMAGE = 'cithit/roseaw'                               //<-----change this to your MiamiID!
+        DOCKER_CREDENTIALS_ID = 'lusnakj-dockerhub'  
+        DOCKER_IMAGE = 'cithit/lusnakj'                               //<-----change this to your MiamiID!
         IMAGE_TAG = "build-${BUILD_NUMBER}"
-        GITHUB_URL = 'https://github.com/miamioh-cit/225-lab3-9.git' //<-----change this to match this new repository!
-        KUBECONFIG = credentials('roseaw-225')                           //<-----change this to match your kubernetes credentials (MiamiID-225)! 
+        GITHUB_URL = 'https://github.com/JLuzzy/225-lab3-9.git' //<-----change this to match this new repository!
+        KUBECONFIG = credentials('lusnak-225')                           //<-----change this to match your kubernetes credentials (MiamiID-225)! 
     }
 
     stages {
